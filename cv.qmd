@@ -1,0 +1,192 @@
+---
+author: Oleksandra Dreval
+title: Morion Graphics Designer/Graphic Designer
+pdf-engine: latexmk #other engines throw an error :(
+tagline: |
+  I create awesome motion graphics for TV, marketing, and social media. Besides that I am a universe lover always eager to learn new cool stuff and grow my skills!
+format:
+  sidebar-cv-pdf: default
+cvimage:
+  file: od.jpg
+  trim:
+    left: 200 
+    bottom: 400
+    right: 200
+    top: 100
+cvfooter:
+  left: "https://oleksadreval.com"
+  right: "https://www.artstation.com/aleksandradreval"
+color:
+  main: "66b2b2" #without '#'
+  accent: FFA500
+  bgdark: 6E6E6E
+  bglight: E1E1E1
+cvfont: gillius #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvmeta:
+  - name: Contact
+    items:
+      - icon: canadian-maple-leaf #from fontawesome5
+        text: Port Coquitlam, BC, Canada
+      - mail: oleksadreval@gmail.com
+      - icon: home
+        text: oleksadreval.com
+        href: https://oleksadreval.com
+      - icon: linkedin
+        text: "LinkedIn"
+        href: https://www.linkedin.com/in/oleksandra-dreval-ba740a149/
+  - name: Software
+    items:
+      - icon: camera
+        text: Photoshop
+        stars: 5
+      - icon: film
+        text: After Effects
+        stars: 5
+      - icon: draw-polygon
+        text: Illustrator
+        stars: 5
+      - icon: file-video
+        text: Premiere Pro
+        stars: 5
+      - icon: gem
+        text: Cinema 4D + Red Giant
+        stars: 4
+      - icon: gem
+        text: Autodesk Maya
+        stars: 3
+      - icon: gamepad
+        text: Zbrush
+        stars: 3
+      - icon: code
+        text: Unreal Engine
+        stars: 3
+      - icon: edit
+        text: HTML/CSS
+        stars: 5
+      - icon: edit
+        text: Figma
+        stars: 5
+      - icon: laptop-code
+        text: InDesign
+        stars: 5
+      - icon: edit
+        text: XD
+        stars: 5
+  - name: Skills
+    items:
+      - icon: file-video
+        text: Motion Graphics
+        nowrap: true # no newline
+      - icon: desktop
+        text: Graphic Design
+        nowrap: true
+      - icon: paint-brush
+        text: Adobe CS
+        nowrap: true
+      - icon: caret-square-right
+        text: 2D/2.5/3D animation
+        nowrap: true
+      - icon: caret-square-right
+        text: Styling
+        nowrap: true
+      - icon: caret-square-right
+        text: Branding and visual identity
+        nowrap: true
+      - icon: caret-square-right
+        text: Print production/prepress
+        nowrap: true
+      - icon: edit
+        text: Tracking
+        nowrap: true
+      - icon: edit
+        text: Rotoscoping
+        nowrap: true
+      - icon: edit
+        text: UI/UX (mobile/desktop)
+        nowrap: true
+      - icon: caret-square-right
+        text: Typography
+        nowrap: true
+      - icon: caret-square-right
+        text: Layout
+        nowrap: true
+      - icon: caret-square-right
+        text: Color
+        nowrap: true
+      - icon: caret-square-right
+        text: Composition
+        nowrap: true
+  - name: Awards
+    items:
+      - icon: photo-video
+        text: American Inst. of Graphic Arts (AIGA)
+      - icon: palette
+        text: Universal Phoenix Group
+      - icon: paint-brush
+        text: NVidia
+  - name: Certifications
+    items:
+      - icon: code
+        text: Autodesk Maya
+      - icon: code
+        text: 3DsMax Professional Advanced Course
+      - icon: code
+        text: Autodesk AutoCAD Advanced Course
+execute:
+  echo: false
+keep-tex: true
+---
+
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, details) {
+
+    command_start <- "\\cvevent"
+
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}")
+    
+    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0(x, collapse = ", "))
+    res <- paste0(res, "{",tbl[[details]],"}")
+    cat(res, sep = "\n")
+}
+```
+
+# Summary
+
+Motion Graphics Designer experienced in animation, production, games, and UI/UX design.
+
+# Experience
+
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details, ~tasks,
+    "Lead Graphic Designer @ 3AG Systems", "Burnaby, BC", "2021 - Present", "Marketing Department", c("Produced marketing materials from concept to delivery", "Designed UI/UX for desktop and mobile software products and web-sites", "Developed brand identity and guidelines", "Created production collaterals with efficient file-building methods"),
+    "Graphic Designer @ mimik Technologies Inc", "Vancouver, BC", "2021 - 2021", "Marketing Department", c("Developed and executed corporate brand identity", "Created static graphics and videos to support brand development", "Conceptualized and designed UI/UX and web-site"),
+    "Animator/Illustrator @ Wawybrain Studios LLC", "Albuquerque, NM", "2020 - 2021", "Game Design", c("Produced character design with animation and cinematics", "Developed concept art for in-game assets and marketing materials", "Created artworks and illustrations to promote storytelling"),
+    "Motion Graphics Designer @ REELZ TV", "Albuquerque, NM", "2018 - 2020", "Marketing Department", c("Created motion graphics and key-art for on- and off-air graphics", "Enhanced video/photo to enhance visual appeal and maintain brand identity", "Interviewed potential recruits and trainined new team members", "Developed and executed branding strategies and maintained digital assets database"),
+    "3D Animator @ Universal Phoenix Group", "Atlanta, GA", "2017", "Game design", c(),
+    "Graphic Designer @ RightBrain Training", "Kyiv", "2014 - 2017", "Marketing Department", c()
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
+```
+
+# Education
+
+```{r }
+#| label: education
+#| output: asis
+tibble::tribble(
+    ~degree, ~uni, ~loc, ~dates, ~details,
+    "MSc in Computer Graphics and Design", "Ukraine", "Donetsk, Ukraine", "2013 - 2016", c(""),
+    "MSc in Biology", "Ukraine", "Donetsk, Ukraine", "2007 - 2012", c("")
+) |>
+    cvevents(when = "dates", what = "degree", where = "uni", details = "details")
+```
