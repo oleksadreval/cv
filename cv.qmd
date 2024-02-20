@@ -7,7 +7,7 @@ tagline: |
 format:
   sidebar-cv-pdf: default
 cvimage:
-  file: od.jpg
+  file: OD_blackWhite.jpg
   trim:
     left: 200 
     bottom: 400
@@ -17,10 +17,12 @@ cvfooter:
   left: "https://oleksadreval.com"
   right: "https://www.artstation.com/aleksandradreval"
 color:
-  main: "66b2b2" #without '#'
-  accent: FFA500
-  bgdark: 6E6E6E
-  bglight: E1E1E1
+  main: "FFAA00" #without '#'
+  accent: "000000"
+  bgdark: "000000"
+  bglight: "000000"
+  titletext: FFFFFF
+  maintext: "000000"
 cvfont: gillius #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
   - name: Contact
@@ -39,11 +41,12 @@ cvmeta:
       - icon: magic
         text: Photoshop
         stars: 5
-      - icon: film
-        text: After Effects
-        stars: 5
+        nowrap: true
       - icon: bezier-curve
         text: Illustrator
+        stars: 5
+      - icon: film
+        text: After Effects
         stars: 5
       - icon: file-video
         text: Premiere Pro
@@ -124,14 +127,6 @@ cvmeta:
         text: Universal Phoenix Group
       - icon: paint-brush
         text: NVidia
-  - name: Certifications
-    items:
-      - icon: code
-        text: Autodesk Maya
-      - icon: code
-        text: 3DsMax Professional Advanced Course
-      - icon: code
-        text: Autodesk AutoCAD Advanced Course
 execute:
   echo: false
 keep-tex: true

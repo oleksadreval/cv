@@ -86,15 +86,19 @@
 \usepackage{color}
 
 %accent color
-\definecolor{complcol}{HTML}{FFA500}
+\definecolor{complcol}{HTML}{000000}
 
 %dark background color
-\definecolor{bgcol}{HTML}{6E6E6E}
+\definecolor{bgcol}{HTML}{000000}
 
 %light background / accent color
-\definecolor{softcol}{HTML}{E1E1E1}
+\definecolor{softcol}{HTML}{000000}
 
-\definecolor{sectcol}{HTML}{66b2b2}
+\definecolor{sectcol}{HTML}{FFAA00}
+
+\definecolor{textcol}{HTML}{000000}
+
+\definecolor{titletextcol}{HTML}{FFFFFF}
 
 
 %Package for links, must be the last package used
@@ -148,7 +152,7 @@
 \newcommand{\cvsection}[1]
 {
 \colorbox{sectcol}{\mystrut \makebox[1\mpwidth][l]{
-\larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \textbf{\textcolor{white}{\uppercase{#1}}}\hspace{4pt}
+\larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \textbf{\textcolor{textcol}{\uppercase{#1}}}\hspace{4pt}
 }}\\
 }
 
@@ -158,9 +162,9 @@
 \newenvironment{metasection}[1] {
 	\vspace{6pt}
 	\begin{center}
-		\textcolor{white}{\large{\uppercase{#1}}}\\
+		\textcolor{textcol}{\large{\uppercase{#1}}}\\
 	\normalsize
-	\parbox{0.7\mpwidth}{\textcolor{white}	\hrule}
+	\parbox{0.7\mpwidth}{\textcolor{textcol}	\hrule}
 }{\end{center}}
 
 %----------------------------------------------------------------------------------------
@@ -271,7 +275,7 @@
 		%----------------------------------------------------------------------------------------
 		\vspace{-3pt}
 
-		\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{\uppercase{Oleksandra
+		\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{titletextcol}{\uppercase{Oleksandra
 Dreval}} }  }}
 
 		%----------------------------------------------------------------------------------------
@@ -279,7 +283,7 @@ Dreval}} }  }}
 		%----------------------------------------------------------------------------------------
 
 		\includegraphics[trim= 200 400
-			200 100, clip ,width=\linewidth]{od.jpg}
+			200 100, clip ,width=\linewidth]{OD\_blackWhite.jpg}
 		%trimming relative to image size
 
 		%---------------------------------------------------------------------------------------
@@ -292,9 +296,10 @@ Dreval}} }  }}
 			\parbox{0.5\linewidth}{
 				\transparent{1}%
 				\begin{center}
-					\larrow{sectcol}\larrow{sectcol}\textcolor{white}{I create awesome
-motion graphics for TV, marketing, and social media. Besides that I am a
-universe lover always eager to learn new cool stuff and grow my skills!}
+					\larrow{sectcol}\larrow{sectcol}\textcolor{titletextcol}{I create
+awesome motion graphics for TV, marketing, and social media. Besides
+that I am a universe lover always eager to learn new cool stuff and grow
+my skills!}
 				\end{center}
 			}
 		}
@@ -328,67 +333,61 @@ and UI/UX design.
 				\begin{metasection}{Contact}
 
 									\icontext{canadian-maple-leaf}{12}{Port Coquitlam, BC,
-Canada}{white}\\[6pt]
-												\iconemail{paper-plane}{12}{oleksadreval@gmail.com}{oleksadreval@gmail.com}{white}\\[6pt]
-												\iconhref{atlas}{12}{Portfolio}{https://oleksadreval.github.io}{white}\\[6pt]
-												\iconhref{linkedin}{12}{LinkedIn}{https://www.linkedin.com/in/oleksandra-dreval-ba740a149/}{white}\\[6pt]
+Canada}{textcol}\\[6pt]
+												\iconemail{paper-plane}{12}{oleksadreval@gmail.com}{oleksadreval@gmail.com}{textcol}\\[6pt]
+												\iconhref{atlas}{12}{Portfolio}{https://oleksadreval.github.io}{textcol}\\[6pt]
+												\iconhref{linkedin}{12}{LinkedIn}{https://www.linkedin.com/in/oleksandra-dreval-ba740a149/}{textcol}\\[6pt]
 								\end{metasection}
 				\begin{metasection}{Software}
 
-									\icontext{magic}{12}{Photoshop}{white}\\
+									\icontext{magic}{12}{Photoshop}{textcol}\\
 			\starrating{5} \\[6pt]
-												\icontext{film}{12}{After Effects}{white}\\
+												\icontext{bezier-curve}{12}{Illustrator}{textcol}\\
 			\starrating{5} \\[6pt]
-												\icontext{bezier-curve}{12}{Illustrator}{white}\\
+												\icontext{film}{12}{After Effects}{textcol}\\
 			\starrating{5} \\[6pt]
-												\icontext{file-video}{12}{Premiere Pro}{white}\\
+												\icontext{file-video}{12}{Premiere Pro}{textcol}\\
 			\starrating{5} \\[6pt]
-												\icontext{draw-polygon}{12}{Cinema 4D + Red Giant}{white}\\
+												\icontext{draw-polygon}{12}{Cinema 4D + Red Giant}{textcol}\\
 			\starrating{4} \\[6pt]
-												\icontext{shapes}{12}{Autodesk Maya}{white}\\
+												\icontext{shapes}{12}{Autodesk Maya}{textcol}\\
 			\starrating{3} \\[6pt]
-												\icontext{gamepad}{12}{Zbrush}{white}\\
+												\icontext{gamepad}{12}{Zbrush}{textcol}\\
 			\starrating{3} \\[6pt]
-												\icontext{edit}{12}{Unreal Engine}{white}\\
+												\icontext{edit}{12}{Unreal Engine}{textcol}\\
 			\starrating{3} \\[6pt]
-												\icontext{code}{12}{HTML/CSS}{white}\\
+												\icontext{code}{12}{HTML/CSS}{textcol}\\
 			\starrating{5} \\[6pt]
-												\icontext{figma}{12}{Figma}{white}\\
+												\icontext{figma}{12}{Figma}{textcol}\\
 			\starrating{5} \\[6pt]
-												\icontext{indent}{12}{InDesign}{white}\\
+												\icontext{indent}{12}{InDesign}{textcol}\\
 			\starrating{5} \\[6pt]
-												\icontext{laptop-code}{12}{XD}{white}\\
+												\icontext{laptop-code}{12}{XD}{textcol}\\
 			\starrating{5} \\[6pt]
 								\end{metasection}
 				\begin{metasection}{Skills}
 
-									\icontext{file-video}{12}{Motion Graphics}{white}
-												\icontext{desktop}{12}{Graphic Design}{white}
-												\icontext{paint-brush}{12}{Adobe CS}{white}
-												\icontext{video}{12}{2D/2.5/3D animation}{white}
-												\icontext{record-vinyl}{12}{Styling}{white}
-												\icontext{eye}{12}{Branding and visual identity}{white}
-												\icontext{indent}{12}{Print production/prepress}{white}
-												\icontext{ellipsis-h}{12}{Tracking}{white}
-												\icontext{draw-polygon}{12}{Rotoscoping}{white}
-												\icontext{laptop-code}{12}{UI/UX (mobile/desktop)}{white}
-												\icontext{adjust}{12}{Color}{white}
-												\icontext{sticky-note}{12}{Composition}{white}
-												\icontext{font}{12}{Typography}{white}
-												\icontext{sliders-h}{12}{Layout}{white}
+									\icontext{file-video}{12}{Motion Graphics}{textcol}
+												\icontext{desktop}{12}{Graphic Design}{textcol}
+												\icontext{paint-brush}{12}{Adobe CS}{textcol}
+												\icontext{video}{12}{2D/2.5/3D animation}{textcol}
+												\icontext{record-vinyl}{12}{Styling}{textcol}
+												\icontext{eye}{12}{Branding and visual identity}{textcol}
+												\icontext{indent}{12}{Print production/prepress}{textcol}
+												\icontext{ellipsis-h}{12}{Tracking}{textcol}
+												\icontext{draw-polygon}{12}{Rotoscoping}{textcol}
+												\icontext{laptop-code}{12}{UI/UX (mobile/desktop)}{textcol}
+												\icontext{adjust}{12}{Color}{textcol}
+												\icontext{sticky-note}{12}{Composition}{textcol}
+												\icontext{font}{12}{Typography}{textcol}
+												\icontext{sliders-h}{12}{Layout}{textcol}
 								\end{metasection}
 				\begin{metasection}{Awards}
 
 									\icontext{photo-video}{12}{American Inst. of Graphic Arts
-(AIGA)}{white}\\[6pt]
-												\icontext{palette}{12}{Universal Phoenix Group}{white}\\[6pt]
-												\icontext{paint-brush}{12}{NVidia}{white}\\[6pt]
-								\end{metasection}
-				\begin{metasection}{Certifications}
-
-									\icontext{code}{12}{Autodesk Maya}{white}\\[6pt]
-												\icontext{code}{12}{3DsMax Professional Advanced Course}{white}\\[6pt]
-												\icontext{code}{12}{Autodesk AutoCAD Advanced Course}{white}\\[6pt]
+(AIGA)}{textcol}\\[6pt]
+												\icontext{palette}{12}{Universal Phoenix Group}{textcol}\\[6pt]
+												\icontext{paint-brush}{12}{NVidia}{textcol}\\[6pt]
 								\end{metasection}
 				%---------------------------------------------------------------------------------------
 		%	QR CODE (optional)
@@ -407,7 +406,7 @@ Canada}{white}\\[6pt]
 
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{} \textcolor{white}{}}}\\[-6pt]
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{textcol}{} \textcolor{textcol}{}}}\\[-6pt]
 
 %============================================================================%
 %

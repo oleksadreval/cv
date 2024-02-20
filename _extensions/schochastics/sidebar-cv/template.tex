@@ -96,6 +96,10 @@
 
 \definecolor{sectcol}{HTML}{$color.main$}
 
+\definecolor{textcol}{HTML}{$color.maintext$}
+
+\definecolor{titletextcol}{HTML}{$color.titletext$}
+
 
 %Package for links, must be the last package used
 \usepackage[hidelinks]{hyperref}
@@ -148,7 +152,7 @@
 \newcommand{\cvsection}[1]
 {
 \colorbox{sectcol}{\mystrut \makebox[1\mpwidth][l]{
-\larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \textbf{\textcolor{white}{\uppercase{#1}}}\hspace{4pt}
+\larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \textbf{\textcolor{textcol}{\uppercase{#1}}}\hspace{4pt}
 }}\\
 }
 
@@ -158,9 +162,9 @@
 \newenvironment{metasection}[1] {
 	\vspace{6pt}
 	\begin{center}
-		\textcolor{white}{\large{\uppercase{#1}}}\\
+		\textcolor{textcol}{\large{\uppercase{#1}}}\\
 	\normalsize
-	\parbox{0.7\mpwidth}{\textcolor{white}	\hrule}
+	\parbox{0.7\mpwidth}{\textcolor{textcol}	\hrule}
 }{\end{center}}
 
 %----------------------------------------------------------------------------------------
@@ -271,7 +275,7 @@
 		%----------------------------------------------------------------------------------------
 		\vspace{-3pt}
 
-		\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{\uppercase{$author$}} }  }}
+		\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{titletextcol}{\uppercase{$author$}} }  }}
 
 		%----------------------------------------------------------------------------------------
 		%	HEADER IMAGE
@@ -291,7 +295,7 @@
 			\parbox{0.5\linewidth}{
 				\transparent{1}%
 				\begin{center}
-					\larrow{sectcol}\larrow{sectcol}\textcolor{white}{$tagline$}
+					\larrow{sectcol}\larrow{sectcol}\textcolor{titletextcol}{$tagline$}
 				\end{center}
 			}
 		}
@@ -310,16 +314,16 @@
 
 			$for(cvmeta.items)$
 			$if(cvmeta.items.mail)$
-			\iconemail{paper-plane}{12}{$cvmeta.items.mail$}{$cvmeta.items.mail$}{white}\\[6pt]
+			\iconemail{paper-plane}{12}{$cvmeta.items.mail$}{$cvmeta.items.mail$}{textcol}\\[6pt]
 			$elseif(cvmeta.items.href)$
-			\iconhref{$cvmeta.items.icon$}{12}{$cvmeta.items.text$}{$cvmeta.items.href$}{white}\\[6pt]
+			\iconhref{$cvmeta.items.icon$}{12}{$cvmeta.items.text$}{$cvmeta.items.href$}{textcol}\\[6pt]
 			$elseif(cvmeta.items.stars)$
-			\icontext{$cvmeta.items.icon$}{12}{$cvmeta.items.text$}{white}\\
+			\icontext{$cvmeta.items.icon$}{12}{$cvmeta.items.text$}{textcol}\\
 			\starrating{$cvmeta.items.stars$} \\[6pt]
 			$elseif(cvmeta.items.nowrap)$
-			\icontext{$cvmeta.items.icon$}{12}{$cvmeta.items.text$}{white}
+			\icontext{$cvmeta.items.icon$}{12}{$cvmeta.items.text$}{textcol}
 			$else$
-			\icontext{$cvmeta.items.icon$}{12}{$cvmeta.items.text$}{white}\\[6pt]
+			\icontext{$cvmeta.items.icon$}{12}{$cvmeta.items.text$}{textcol}\\[6pt]
 			$endif$
 			$endfor$
 		\end{metasection}
@@ -341,7 +345,7 @@
 
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{} \textcolor{white}{}}}\\[-6pt]
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{textcol}{} \textcolor{textcol}{}}}\\[-6pt]
 
 %============================================================================%
 %
