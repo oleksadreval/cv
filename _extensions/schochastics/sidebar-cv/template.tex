@@ -100,6 +100,8 @@
 
 \definecolor{titletextcol}{HTML}{$color.titletext$}
 
+\definecolor{starcol}{HTML}{$color.star$}
+
 
 %Package for links, must be the last package used
 \usepackage[hidelinks]{hyperref}
@@ -252,7 +254,7 @@
 }
 
 \newcommand{\starrating}[1]{
-	\foreach \n in {1,...,#1}{\icon{star}{12}{complcol}}
+	\foreach \n in {1,...,#1}{\icon{star}{12}{starcol}}
 }
 
 

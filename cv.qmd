@@ -23,6 +23,7 @@ color:
   bglight: "000000"
   titletext: FFFFFF
   maintext: "000000"
+  star: "000000"
 cvfont: gillius #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
   - name: Contact
