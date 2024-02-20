@@ -28,48 +28,48 @@ cvmeta:
       - icon: canadian-maple-leaf #from fontawesome5
         text: Port Coquitlam, BC, Canada
       - mail: oleksadreval@gmail.com
-      - icon: home
-        text: oleksadreval.com
-        href: https://oleksadreval.com
+      - icon: atlas
+        text: Portfolio
+        href: https://oleksadreval.github.io
       - icon: linkedin
         text: "LinkedIn"
         href: https://www.linkedin.com/in/oleksandra-dreval-ba740a149/
   - name: Software
     items:
-      - icon: camera
+      - icon: magic
         text: Photoshop
         stars: 5
       - icon: film
         text: After Effects
         stars: 5
-      - icon: draw-polygon
+      - icon: bezier-curve
         text: Illustrator
         stars: 5
       - icon: file-video
         text: Premiere Pro
         stars: 5
-      - icon: gem
+      - icon: draw-polygon
         text: Cinema 4D + Red Giant
         stars: 4
-      - icon: gem
+      - icon: shapes
         text: Autodesk Maya
         stars: 3
       - icon: gamepad
         text: Zbrush
         stars: 3
-      - icon: code
+      - icon: edit
         text: Unreal Engine
         stars: 3
-      - icon: edit
+      - icon: code
         text: HTML/CSS
         stars: 5
-      - icon: edit
+      - icon: figma
         text: Figma
         stars: 5
-      - icon: laptop-code
+      - icon: indent
         text: InDesign
         stars: 5
-      - icon: edit
+      - icon: laptop-code
         text: XD
         stars: 5
   - name: Skills
@@ -83,38 +83,38 @@ cvmeta:
       - icon: paint-brush
         text: Adobe CS
         nowrap: true
-      - icon: caret-square-right
+      - icon: video
         text: 2D/2.5/3D animation
         nowrap: true
-      - icon: caret-square-right
+      - icon: record-vinyl
         text: Styling
         nowrap: true
-      - icon: caret-square-right
+      - icon: eye
         text: Branding and visual identity
         nowrap: true
-      - icon: caret-square-right
+      - icon: indent
         text: Print production/prepress
         nowrap: true
-      - icon: edit
+      - icon: ellipsis-h
         text: Tracking
         nowrap: true
-      - icon: edit
+      - icon: draw-polygon
         text: Rotoscoping
         nowrap: true
-      - icon: edit
+      - icon: laptop-code
         text: UI/UX (mobile/desktop)
         nowrap: true
-      - icon: caret-square-right
-        text: Typography
-        nowrap: true
-      - icon: caret-square-right
-        text: Layout
-        nowrap: true
-      - icon: caret-square-right
+      - icon: adjust
         text: Color
         nowrap: true
-      - icon: caret-square-right
+      - icon: sticky-note
         text: Composition
+        nowrap: true
+      - icon: font
+        text: Typography
+        nowrap: true
+      - icon: sliders-h
+        text: Layout
         nowrap: true
   - name: Awards
     items:
