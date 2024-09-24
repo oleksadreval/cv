@@ -3,16 +3,16 @@ author: Oleksandra Dreval
 title: Morion Graphics Designer/Graphic Designer
 pdf-engine: latexmk #other engines throw an error :(
 tagline: |
-  I create awesome motion graphics for TV, marketing, and social media. Besides that I am a universe lover always eager to learn new cool stuff and grow my skills!
+  I create awesome 2D/3D characters for game and animation. Besides that I am a flexible universe lover committed to learn new cool stuff and grow my skills!
 format:
   sidebar-cv-pdf: default
 cvimage:
-  file: OD_blackWhite.jpg
+  file: character.jpeg
   trim:
-    left: 200 
-    bottom: 500
-    right: 200
-    top: 400
+    left: 100 
+    bottom: 50
+    right: 100
+    top: 70
 cvfooter:
   left: "https://oleksadreval.com"
   right: "https://www.artstation.com/aleksandradreval"
@@ -33,7 +33,7 @@ cvmeta:
       - mail: oleksadreval@gmail.com
       - icon: atlas
         text: Portfolio
-        href: https://oleksadreval.github.io
+        href: https://oleksadreval.github.io/illustrations_digital.html
       - icon: linkedin
         text: "LinkedIn"
         href: https://www.linkedin.com/in/oleksandra-dreval-ba740a149/
@@ -65,66 +65,69 @@ cvmeta:
         text: Unreal Engine
         stars: 3
       - icon: code
-        text: HTML/CSS
+        text: Workflows
         stars: 5
-      - icon: figma
-        text: Figma
+      - icon: meteor
+        text: Animation
         stars: 5
       - icon: indent
         text: InDesign
         stars: 5
-      - icon: laptop-code
-        text: XD
+      - icon: heart
+        text: Human anatomy
         stars: 5
   - name: Skills
     items:
       - icon: file-video
         text: Motion Graphics
         nowrap: true # no newline
-      - icon: desktop
-        text: Graphic Design
+      - icon: gamepad
+        text: Character Design
         nowrap: true
-      - icon: paint-brush
+      - icon: bezier-curve
         text: Adobe CS
         nowrap: true
       - icon: video
-        text: 2D/2.5/3D animation
+        text: 2D/2.5D/3D animation
         nowrap: true
       - icon: record-vinyl
-        text: Styling
+        text: Art continuity
         nowrap: true
       - icon: eye
-        text: Branding and visual identity
+        text: Character Modelling
         nowrap: true
-      - icon: indent
-        text: Print production/prepress
+      - icon: paint-brush
+        text: Painting
         nowrap: true
       - icon: ellipsis-h
-        text: Tracking
-        nowrap: true
-      - icon: draw-polygon
-        text: Rotoscoping
-        nowrap: true
-      - icon: laptop-code
-        text: UI/UX (mobile/desktop)
-        nowrap: true
-      - icon: adjust
-        text: Color
-        nowrap: true
-      - icon: sticky-note
-        text: Composition
-        nowrap: true
-      - icon: font
-        text: Typography
+        text: Leadership
         nowrap: true
       - icon: sliders-h
         text: Layout
         nowrap: true
-      - icon: handshake
-        text: Flexibility
+      - icon: draw-polygon
+        text: Multitasking
+        nowrap: true
+      - icon: desktop
+        text: GFX
         nowrap: true
       - icon: lightbulb
         text: Creativity
+        nowrap: true
+      - icon: adjust
+        text: Color theory
+        nowrap: true
+      - icon: handshake
+        text: Flexibility
+        nowrap: true
+      - icon: laptop-code
+        text: UI/UX
+        nowrap: true
+      - icon: font
+        text: Typography
+        nowrap: true
+      - icon: sticky-note
+        text: Composition
         nowrap: true
   - name: Awards
     items:
@@ -159,7 +162,7 @@ cvevents <- function(tbl, when, what, where, details) {
 
 # Summary
 
-Motion Graphics Designer experienced in animation, production, games, and UI/UX design.
+2D/3D character artist experienced in animation, production, games, and motion graphics.
 
 # Experience
 
@@ -169,12 +172,11 @@ Motion Graphics Designer experienced in animation, production, games, and UI/UX 
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
+    "Character Artist @ Wawybrain Studios", "Albuquerque, NM", "02/2020 - Present", "Game Design", c("Produced character design with human anatomy for animation and cinematics", "Developed concept art for characters and in-game assets", "Developed 3D models of characters with surfacing and fur", "Created graphics and illustrations to promote storytelling", "Created character and asset sketching and design following best quality standards"),
     "Lead Graphic Designer @ 3AG Systems", "Burnaby, BC", "09/2021 - Present", "Marketing Department", c("Produced marketing materials from concept to delivery", "Designed UI/UX for desktop and mobile software products and web-sites", "Developed brand identity and guidelines with innovative solutions", "Created production collaterals with efficient file-building methods and workflows"),
     "Graphic Designer @ mimik Technologies Inc", "Vancouver, BC", "04/2021 - 09/2021", "Marketing Department", c("Developed and executed corporate brand identity in-line with latest industry trends", "Created graphics and videos to support brand development to highest quality standards", "Conceptualized and designed UI/UX and web-site following style guidelines"),
-    "Animator/Illustrator @ Wawybrain Studios LLC", "Albuquerque, NM", "2020 - 2021", "Game Design", c("Produced character design with human anatomy for animation and cinematics", "Developed concept art for characters and in-game assets", "Conceptualized and developed 3D models of characters including texturing", "Created artworks and illustrations to promote storytelling", "Created character and asset sketching and design following best quality standards"),
     "Motion Graphics Designer @ REELZ TV", "Albuquerque, NM", "03/2018 - 06/2020", "Marketing Department", c("Created motion and keyart for on- and off-air graphics coherent with art direction", "Enhanced video/photo to enhance visual appeal and maintain brand identity", "Interviewed potential recruits and provided mentorship for new team members", "Developed and executed branding strategies and maintained digital assets database", "Developed workflows and best practices for asset organization in database"),
-    "3D Animator @ Universal Phoenix Group", "Atlanta, GA", "2017", "Game design", c(),
-    "Graphic Designer @ RightBrain Training", "Kyiv", "2014 - 2017", "Marketing Department", c()
+    "3D Animator @ Universal Phoenix Group", "Atlanta, GA", "05/2017 - 08/2017", "Game design", c("Animated 3D models of in-game characters using provided models and keyed lighting", "Followed production workflows for game development in collaborative setting")
 
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
