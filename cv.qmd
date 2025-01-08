@@ -10,9 +10,9 @@ cvimage:
   file: Mine_42s.jpg
   trim:
     left: 200 
-    bottom: 50
+    bottom: 125
     right: 200
-    top: 50
+    top: 150
 cvfooter:
   left: "https://oleksadreval.com"
   right: "https://www.artstation.com/aleksandradreval"
@@ -170,10 +170,10 @@ Motion Graphics Designer experienced in animation, production, games, and UI/UX 
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
-    "Lead Graphic Designer @ 3AG Systems", "Burnaby, BC", "09/2021 - Present", "Marketing Department", c("Created videos and animations including short animated films", "Produced marketing materials from concept to delivery", "Developed brand identity and guidelines with innovative solutions", "Created production collaterals with efficient file-building methods and workflows"),
-    "Graphic Designer @ mimik Technologies Inc", "Vancouver, BC", "04/2021 - 09/2021", "Marketing Department", c("Developed and executed corporate brand identity in-line with latest industry trends", "Created graphics and videos to support brand development to highest quality standards", "Conceptualized and designed UI/UX and web-site following style guidelines"),
+    "Lead Graphic Designer @ 3AG Systems", "Burnaby, BC", "09/2021 - Present", "Marketing Department", c("Created videos and animations including short animated films", "Produced marketing materials from concept to delivery", "Developed brand identity and guidelines with innovative solutions", "Created production collaterals with efficient file-building methods and workflows", "Developed 2D and 3D content for social media"),
+    "Graphic Designer @ mimik Technologies Inc", "Vancouver, BC", "04/2021 - 09/2021", "Marketing Department", c("Developed and executed corporate brand identity in-line with latest industry trends", "Created graphics and videos to support brand development to highest quality standards", "Created content for social media", "Conceptualized and designed UI/UX and web-site following style guidelines"),
     "Animator/Illustrator @ Wawybrain Studios LLC", "Albuquerque, NM", "2020 - 2021", "Game Design", c("Produced character design with human anatomy for animation and cinematics", "Developed concept art for characters and in-game assets", "Conceptualized and developed 3D models of characters including texturing", "Created artworks and illustrations to promote storytelling", "Created character and asset sketching and design following best quality standards"),
-    "Motion Graphics Designer @ REELZ TV", "Albuquerque, NM", "03/2018 - 06/2020", "Marketing Department", c("Created motion and keyart for on- and off-air graphics coherent with art direction", "Enhanced video/photo to enhance visual appeal and maintain brand identity", "Interviewed potential recruits and provided mentorship for new team members", "Developed and executed branding strategies and maintained digital assets database", "Developed workflows and best practices for asset organization in database"),
+    "Motion Graphics Designer @ REELZ TV", "Albuquerque, NM", "03/2018 - 06/2020", "Marketing Department", c("Created motion and keyart for on- and off-air graphics coherent with art direction", "Enhanced video/photo to enhance visual appeal and maintain brand identity", "Interviewed potential recruits and provided mentorship for new team members", "Developed and executed branding strategies and maintained digital assets database", "Created content for social media", "Developed workflows and best practices for asset organization in database"),
     "3D Animator @ Universal Phoenix Group", "Atlanta, GA", "2017", "Game design", c(),
     "Graphic Designer @ RightBrain Training", "Kyiv", "2014 - 2017", "Marketing Department", c()
 
