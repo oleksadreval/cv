@@ -7,12 +7,12 @@ tagline: |
 format:
   sidebar-cv-pdf: default
 cvimage:
-  file: character.jpeg
+  file: dog2.jpg
   trim:
-    left: 100 
-    bottom: 50
-    right: 100
-    top: 70
+    left: 0 
+    bottom: 320
+    right: 200
+    top: 770
 cvfooter:
   left: "https://oleksadreval.com"
   right: "https://www.artstation.com/aleksandradreval"
@@ -24,6 +24,7 @@ color:
   titletext: FFFFFF
   maintext: "000000"
   star: "000000"
+  dates: "000000"
 cvfont: gillius #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
   - name: Contact
@@ -32,8 +33,8 @@ cvmeta:
         text: Port Coquitlam, BC, Canada
       - mail: oleksadreval@gmail.com
       - icon: atlas
-        text: Portfolio
-        href: https://oleksadreval.github.io/illustrations_digital.html
+        text: https://oleksadreval.com
+        href: https://oleksadreval.com
       - icon: linkedin
         text: "LinkedIn"
         href: https://www.linkedin.com/in/oleksandra-dreval-ba740a149/
@@ -172,9 +173,9 @@ cvevents <- function(tbl, when, what, where, details) {
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
+    "Character Designer @ Bonsai Animations", "Toronto, ON", "10/2024 - Present", "Game Design", c("Designed unique characters to align with project vision and style", "Produced detailed face expressions for 2D animations ensuring design consistency", "Refined character design features to enhance storytelling and audience engagement"),
     "Character Artist @ Wawybrain Studios", "Albuquerque, NM", "02/2020 - Present", "Game Design", c("Produced character design with human anatomy for animation and cinematics", "Developed concept art for characters and in-game assets", "Developed 3D models of characters with surfacing and fur", "Created graphics and illustrations to promote storytelling", "Created character and asset sketching and design following best quality standards"),
-    "Lead Graphic Designer @ 3AG Systems", "Burnaby, BC", "09/2021 - Present", "Marketing Department", c("Produced marketing materials from concept to delivery", "Designed UI/UX for desktop and mobile software products and web-sites", "Developed brand identity and guidelines with innovative solutions", "Created production collaterals with efficient file-building methods and workflows"),
-    "Graphic Designer @ mimik Technologies Inc", "Vancouver, BC", "04/2021 - 09/2021", "Marketing Department", c("Developed and executed corporate brand identity in-line with latest industry trends", "Created graphics and videos to support brand development to highest quality standards", "Conceptualized and designed UI/UX and web-site following style guidelines"),
+    "Lead Graphic Designer @ 3AG Systems", "Burnaby, BC", "09/2021 - 01/2025", "Marketing Department", c("Produced marketing materials from concept to delivery", "Designed UI/UX for desktop and mobile software products and web-sites", "Developed brand identity and guidelines with innovative solutions", "Created production collaterals with efficient file-building methods and workflows"),
     "Motion Graphics Designer @ REELZ TV", "Albuquerque, NM", "03/2018 - 06/2020", "Marketing Department", c("Created motion and keyart for on- and off-air graphics coherent with art direction", "Enhanced video/photo to enhance visual appeal and maintain brand identity", "Interviewed potential recruits and provided mentorship for new team members", "Developed and executed branding strategies and maintained digital assets database", "Developed workflows and best practices for asset organization in database"),
     "3D Animator @ Universal Phoenix Group", "Atlanta, GA", "05/2017 - 08/2017", "Game design", c("Animated 3D models of in-game characters using provided models and keyed lighting", "Followed production workflows for game development in collaborative setting")
 
